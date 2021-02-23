@@ -48,7 +48,7 @@ function Board() {
     whiteCheck: false,
     blackCheck: false,
 
-    gameResult: 0 
+    gameResult: 0,
 
     //0 -> Playing
     //1 -> Draw

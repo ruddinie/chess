@@ -10,11 +10,7 @@ export default function BoardTiles({gameState,setgameState, playerState, setplay
     for (let row = 0; row < 8; row++) {
         for (let column = 0; column < 8; column++) {
             let color = '';
-            if(row%2 == 0){
-                column%2 == 0 ? color='white' : color='dark';
-            }else{
-                column%2 == 0 ? color='dark' : color='white';
-            }
+            (row+column)%2 === 0 ? color='white' : color="dark"
             // console.log(gameState.piecePosition[row][column]);
             tiles.push(<Tile row={row} 
                 column={column} 

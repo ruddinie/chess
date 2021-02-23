@@ -7,6 +7,10 @@ export default function movePiece(row, column, gameState,setgameState, playerSta
 
     let toMoveTile = String.fromCharCode(65+column)+(8-row)
 
+    //update FEN
+    //update PGN
+
+    //save position in history
 
     //remove castle moves, if king or any rook moves
 
@@ -103,7 +107,8 @@ export default function movePiece(row, column, gameState,setgameState, playerSta
 
     //if its enPassant
 
-    if (playerState.selectedPiece.toUpperCase() === 'P' && toMoveTile === gameState.enPassant) {
+    if (((gameState.turn && row==2) || (!gameState.turn && row==5)) &&
+        (playerState.selectedPiece.toUpperCase() === 'P' && toMoveTile === gameState.enPassant)) {
         newPiecePosition[8-playerState.selectedTile[1]][playerState.selectedTile.charCodeAt(0) - 65] = ""
         newPiecePosition[row][column] = playerState.selectedPiece;
         newPiecePosition[8-gameState.enPassantPawn[1]][gameState.enPassantPawn.charCodeAt(0) - 65] = '';
