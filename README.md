@@ -2,7 +2,7 @@
 
 DEMO
 
-![]chess_gif.gif
+![](chess_gif.gif)
 
 - This is a chess game, using react
 - Almost fully funcional, Play locally with your friends
