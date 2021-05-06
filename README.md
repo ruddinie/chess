@@ -4,6 +4,9 @@ DEMO
 
 ![](chess_gif.gif)
 
+
+You can access this demo here: https://chess-react-local.herokuapp.com/
+
 - This is a chess game, using react
 - Almost fully funcional, Play locally with your friends
 - There are some issues with the castle move
