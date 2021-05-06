@@ -2,7 +2,7 @@
 
 DEMO
 
-![Readme%20b998d84bb4b743cb80404b87e92345c5/Animao.gif](Readme%20b998d84bb4b743cb80404b87e92345c5/Animao.gif)
+![]chess_gif.gif
 
 - This is a chess game, using react
 - Almost fully funcional, Play locally with your friends
